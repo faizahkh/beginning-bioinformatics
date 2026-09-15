@@ -1,0 +1,1597 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNLKZGPuKkU0pUhsGPs78GO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/faizahkh/beginning-bioinformatics/blob/main/notebooks/Bioinformatics_Module03\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "hrWa5VI1Ipj0"
+      },
+      "outputs": [],
+      "source": [
+        "#Task 1. Rename this notebook Bioinformatics_Module03.ipynb"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 2. print()writes to standard output (i.e. prints output to the screen)\n",
+        "#TASK P2.1: Print hello world\n",
+        "\n",
+        "print('Hello World')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RrqmGeBAOKjr",
+        "outputId": "662080e6-7172-4b58-cad3-21725b6b8590"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 3. = is the ASSIGNMENT operator (assigns values to variables)\n",
+        "#TASK P3.1: Ask Gemini, \"Give me 3 examples to help practice understanding the assignment operator.\"\n",
+        "\n",
+        "x = 3\n",
+        "x"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6MfuV99KORB9",
+        "outputId": "424d8913-25a8-4568-e295-744ba373c749"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 4: Data types and variables\n",
+        "\n",
+        "type(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pHzbBq7qUYvC",
+        "outputId": "7ede2747-ba59-445d-9df7-da877caa79ec"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "int"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Coding operators - Task 5 & Rosalind #1\n",
+        "x = 838\n",
+        "y = 866\n",
+        "z = x**2+y**2\n",
+        "print(f\"The hypotenuse of 838 and 866 is {z}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "C8OGjtqyU9K1",
+        "outputId": "f8393b23-146f-4ab7-80ed-65cf0fece22b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The hypotenuse of 838 and 866 is 1452200\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 1\n",
+        "\n",
+        "user = int(input('Please enter the first number:'))\n",
+        "user2 = int(input('Please enter the second number:'))\n",
+        "answer = print(user**2+user2**2)\n",
+        "\n",
+        "print(answer)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xOoQKs-oVAmQ",
+        "outputId": "710d477f-bcb8-4caf-8b69-9d4e488db75a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Please enter the first number:838\n",
+            "Please enter the second number:866\n",
+            "1452200\n",
+            "None\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 7 - List and append\n",
+        "\n",
+        "my_list = ['Hello', 'World', 'Charles Darwin']\n",
+        "print(my_list[1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "39RXq2wPVDzI",
+        "outputId": "99a0f94b-67e3-4735-f349-47c107c11a10"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#TASK 7.2\n",
+        "my_list[2] = 'Alfred R. Wallace'\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TeFI8Qp3VGNy",
+        "outputId": "617e4c77-067d-4331-d8ee-e044dcafa18e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'World', 'Alfred R. Wallace']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 7.3\n",
+        "my_list.append('Charles Darwin')\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zE2Ww7bAVH1-",
+        "outputId": "f618235a-1273-4edd-e5ab-6980abd52ac1"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'World', 'Alfred R. Wallace', 'Charles Darwin']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Gemini Insertion for task 7.4\n",
+        "my_list.insert(1,'Newton')\n",
+        "print(my_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JATsM3g1VKoK",
+        "outputId": "5adfde4c-24b9-49f3-ac97-a7e4c1570562"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Hello', 'Newton', 'World', 'Alfred R. Wallace', 'Charles Darwin']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 8: Slicing strings and list\n",
+        "print(my_list[2:4])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3WuyMHAOVMAl",
+        "outputId": "a519e943-0251-4d52-f7e5-a361274e4e21"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['World', 'Alfred R. Wallace']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 8.2\n",
+        "my_string = 'HelloWorldCharlesDarwinAlfred R.Wallace'\n",
+        "print(my_string[32:40],my_string[5:10])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "603QpsVgVeDu",
+        "outputId": "28f438d6-82f6-4cac-a680-49a1c99f016e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Wallace World\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 8.3 - Problem 2\n",
+        "rosalind = 'pGgIqKCRoeHd6LSV4vMlRsUNDdTp2qroxGogQatvNyOxWogA3JHirundo77VjihnLzzBrHqzEC2wanatina32MkBFlXVWtH7t8pNrCKm32DcM2gK6WTMYPRwyMRSk251qNfgI5Dv4RqSQkOe4IjSWrAVOVl8N8YAvQCx8PSBr.'\n",
+        "print((rosalind[50:56] + \" \" + rosalind[76:82]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZrrMqmKiVgN0",
+        "outputId": "31ce91df-a6b8-4027-cc74-d5a5f8212c3a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hirund anatin\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 9 - if and else statements/loops\n",
+        "a = 2\n",
+        "b = 3\n",
+        "if a!=b:\n",
+        "  print(a-b)\n",
+        "else:\n",
+        "  print(a+b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QKV6137-gV2x",
+        "outputId": "4ddd274c-58a7-46bf-e190-1c8e8d2a8777"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "-1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 10.1\n",
+        "a = 1\n",
+        "while a <=3:\n",
+        "    a+=1\n",
+        "    print('Counting!')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Wd5aHbqagaME",
+        "outputId": "a8cd0553-73b1-4952-94f5-b06b44252e83"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Counting!\n",
+            "Counting!\n",
+            "Counting!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 11 - for loops\n",
+        "\n",
+        "names = ['Alice','Bob','CHarley']\n",
+        "\n",
+        "for name in names:\n",
+        "  print('Hello',name)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hsCFmXVVgbzY",
+        "outputId": "7f5115e1-abb9-4fc8-a4a9-76bae3d664f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hello Alice\n",
+            "Hello Bob\n",
+            "Hello CHarley\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 12 - for and range to print #s\n",
+        "#Create a variable to define the number of iterations\n",
+        "iterations = 10\n",
+        "\n",
+        "#Print the current item's value each time through the loop\n",
+        "for number in range(iterations):\n",
+        "  print(number)"
+      ],
+      "metadata": {
+        "id": "Ov1u33VIgdSo",
+        "outputId": "e6a603e7-1490-4b63-da63-4389217a3b21",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "6\n",
+            "7\n",
+            "8\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 12.2 - Modify code to print every 3rd #\n",
+        "\n",
+        "iterations = 28\n",
+        "\n",
+        "for number in range(9,iterations,3):\n",
+        "  print(number)"
+      ],
+      "metadata": {
+        "id": "VT2XNDYXgfNq",
+        "outputId": "7de340f6-a812-4971-d92a-144d148639ba",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Problem 3\n",
+        "a = 4630\n",
+        "b = 9349\n",
+        "odd = 0\n",
+        "\n",
+        "for i in range(a,b):\n",
+        "  if i % 2 == 1:\n",
+        "    odd = odd+i\n",
+        "\n",
+        "print(odd)"
+      ],
+      "metadata": {
+        "id": "_CMokH4ngg8C",
+        "outputId": "df68fb75-a43c-4eb8-f65f-b641ce1bffcd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "16487051\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 13 - read() function\n",
+        "\n",
+        "with open(\"practice.txt\", \"r\") as data:\n",
+        "\n",
+        "  print(data.read())\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kkDFuh9d3EJq",
+        "outputId": "3f8b5a78-684c-4b38-98f4-0086b66a34e7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "Yes, brave Sir Robin turned about\n",
+            "He was not afraid to die, O brave Sir Robin\n",
+            "And gallantly he chickened out\n",
+            "He was not at all afraid to be killed in nasty ways\n",
+            "Bravely talking to his feet\n",
+            "Brave, brave, brave, brave Sir Robin\n",
+            "He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 14 - add content and join list\n",
+        "\n",
+        "with open(\"practice.txt\", \"r\") as data:\n",
+        "  list_of_lines = data.readlines()\n",
+        "print(list_of_lines)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0rjrUh1Z3YjJ",
+        "outputId": "4f591005-b42d-4536-c621-1fd8047e222c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['Bravely bold Sir Robin rode forth from Camelot\\n', 'Yes, brave Sir Robin turned about\\n', 'He was not afraid to die, O brave Sir Robin\\n', 'And gallantly he chickened out\\n', 'He was not at all afraid to be killed in nasty ways\\n', 'Bravely talking to his feet\\n', 'Brave, brave, brave, brave Sir Robin\\n', 'He beat a very brave retreat']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 14 - read into list of lines\n",
+        "print(\"_\".join(list_of_lines))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x4jNvFwP3aNc",
+        "outputId": "74322f47-114e-49ce-9f98-4a25f35f7c9e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "_Yes, brave Sir Robin turned about\n",
+            "_He was not afraid to die, O brave Sir Robin\n",
+            "_And gallantly he chickened out\n",
+            "_He was not at all afraid to be killed in nasty ways\n",
+            "_Bravely talking to his feet\n",
+            "_Brave, brave, brave, brave Sir Robin\n",
+            "_He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 15 - Print each line wiht for loop\n",
+        "with open(\"practice.txt\", \"r\") as data:\n",
+        "  for line in data:\n",
+        "    print(line)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LUbi4a_H3cYa",
+        "outputId": "89560780-58f7-46c9-d6e6-8759c166794c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Bravely bold Sir Robin rode forth from Camelot\n",
+            "\n",
+            "Yes, brave Sir Robin turned about\n",
+            "\n",
+            "He was not afraid to die, O brave Sir Robin\n",
+            "\n",
+            "And gallantly he chickened out\n",
+            "\n",
+            "He was not at all afraid to be killed in nasty ways\n",
+            "\n",
+            "Bravely talking to his feet\n",
+            "\n",
+            "Brave, brave, brave, brave Sir Robin\n",
+            "\n",
+            "He beat a very brave retreat\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Rosalind Problem 4\n",
+        "with open('/content/rosalind_ini5_1224_1_dataset (1).txt', 'r') as data:\n",
+        "  even_lines = data.readlines()\n",
+        "\n",
+        "  for even in even_lines[1::2]:\n",
+        "    print(even)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_Q_0BbP53d3Y",
+        "outputId": "9cb21ff7-f1b3-4c74-dff0-ced3387c638c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Some things in life are bad, they can really make you mad\n",
+            "\n",
+            "Other things just make you swear and curse\n",
+            "\n",
+            "When you're chewing on life's gristle, don't grumble give a whistle\n",
+            "\n",
+            "This will help things turn out for the best\n",
+            "\n",
+            "Always look on the bright side of life\n",
+            "\n",
+            "Always look on the right side of life\n",
+            "\n",
+            "If life seems jolly rotten, there's something you've forgotten\n",
+            "\n",
+            "And that's to laugh and smile and dance and sing\n",
+            "\n",
+            "When you're feeling in the dumps, don't be silly, chumps\n",
+            "\n",
+            "Just purse your lips and whistle, that's the thing\n",
+            "\n",
+            "So, always look on the bright side of death\n",
+            "\n",
+            "Just before you draw your terminal breath\n",
+            "\n",
+            "Life's a counterfeit and when you look at it\n",
+            "\n",
+            "Life's a laugh and death's the joke, it's true\n",
+            "\n",
+            "You see, it's all a show, keep them laughing as you go\n",
+            "\n",
+            "Just remember the last laugh is on you\n",
+            "\n",
+            "Always look on the bright side of life\n",
+            "\n",
+            "And always look on the right side of life\n",
+            "\n",
+            "Always look on the bright side of life\n",
+            "\n",
+            "And always look on the right side of life\n",
+            "\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 16 - for word in line.split()\n",
+        "\n",
+        "with open(\"practice16.txt\", \"r\") as data:\n",
+        "  for line in data:\n",
+        "    for word in line.split():\n",
+        "      print(word)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "69GZMa4y3uIw",
+        "outputId": "ffedd647-4167-4138-b6d4-a5b5bea14992"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "We\n",
+            "tried\n",
+            "list\n",
+            "and\n",
+            "we\n",
+            "tried\n",
+            "dicts\n",
+            "also\n",
+            "we\n",
+            "tried\n",
+            "Zen\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 17.1 - Create and print dictionary\n",
+        "\n",
+        "sequences = {\n",
+        "    \"H.neandertalensis\":\"ACGTCGCTCTGCTA\",\n",
+        "    \"H.sapiens\":\"ACGTCACTCTGCTA\"\n",
+        "    }\n",
+        "\n",
+        "print(sequences)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zXtHIwn64boy",
+        "outputId": "9257c830-ee9e-4539-d77a-ed6fa42cf5ef"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'H.neandertalensis': 'ACGTCGCTCTGCTA', 'H.sapiens': 'ACGTCACTCTGCTA'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 18.1 Modify line 8 to create fasta file of hominid sequences\n",
+        "\n",
+        "sequences[\"P.troglodytes\"]='ACGTCACTCTCCTA'\n",
+        "sequences.update({\"G.gorilla\":\"ACGTCCTCCTA\", \"H.erectus\":\"ACGTCACTCTGCTA\"})\n",
+        "print(sequences['H.sapiens'])\n",
+        "for key,value in sequences.items():\n",
+        "  print(key,value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T2gzD4Nx4dpo",
+        "outputId": "d063848d-88c2-4a7e-bfb9-b2f6d5da4e11"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ACGTCACTCTGCTA\n",
+            "H.neandertalensis ACGTCGCTCTGCTA\n",
+            "H.sapiens ACGTCACTCTGCTA\n",
+            "P.troglodytes ACGTCACTCTCCTA\n",
+            "G.gorilla ACGTCCTCCTA\n",
+            "H.erectus ACGTCACTCTGCTA\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 18.2 - Complete Rosalind Problem #5\n",
+        "with open('/content/rosalind_ini5_1224_1_dataset (1).txt', 'r') as data:\n",
+        "  line = data.read()\n",
+        "\n",
+        "word_dictionary = {}\n",
+        "for word in line.split():\n",
+        "  if word in word_dictionary:\n",
+        "    word_dictionary[word] += 1\n",
+        "  else:\n",
+        "    word_dictionary[word] = 1\n",
+        "\n",
+        "for key,value in word_dictionary.items():\n",
+        "  print(key,value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uKrTJaQr4fBu",
+        "outputId": "0e6c51a8-5065-4f33-ad8a-eeabc908e399"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "`Twas 1\n",
+            "brillig, 1\n",
+            "and 12\n",
+            "the 22\n",
+            "slithy 1\n",
+            "toves 1\n",
+            "Some 1\n",
+            "things 3\n",
+            "in 6\n",
+            "life 8\n",
+            "are 1\n",
+            "bad, 1\n",
+            "they 1\n",
+            "can 1\n",
+            "really 1\n",
+            "make 2\n",
+            "you 6\n",
+            "mad 1\n",
+            "Did 1\n",
+            "gyre 1\n",
+            "gimble 1\n",
+            "wabe: 1\n",
+            "Other 1\n",
+            "just 1\n",
+            "swear 1\n",
+            "curse 1\n",
+            "All 1\n",
+            "mimsy 1\n",
+            "were 1\n",
+            "borogoves, 1\n",
+            "When 2\n",
+            "you're 2\n",
+            "chewing 1\n",
+            "on 9\n",
+            "life's 1\n",
+            "gristle, 1\n",
+            "don't 2\n",
+            "grumble 1\n",
+            "give 1\n",
+            "a 4\n",
+            "whistle 1\n",
+            "And 7\n",
+            "mome 1\n",
+            "raths 1\n",
+            "outgrabe. 1\n",
+            "This 1\n",
+            "will 1\n",
+            "help 1\n",
+            "turn 1\n",
+            "out 1\n",
+            "for 1\n",
+            "best 1\n",
+            "\"Beware 1\n",
+            "Jabberwock, 2\n",
+            "my 1\n",
+            "son! 1\n",
+            "Always 4\n",
+            "look 8\n",
+            "bright 4\n",
+            "side 7\n",
+            "of 8\n",
+            "The 4\n",
+            "jaws 1\n",
+            "that 2\n",
+            "bite, 1\n",
+            "claws 1\n",
+            "catch! 1\n",
+            "right 3\n",
+            "Beware 1\n",
+            "Jubjub 1\n",
+            "bird, 1\n",
+            "shun 1\n",
+            "If 1\n",
+            "seems 1\n",
+            "jolly 1\n",
+            "rotten, 1\n",
+            "there's 1\n",
+            "something 1\n",
+            "you've 1\n",
+            "forgotten 1\n",
+            "frumious 1\n",
+            "Bandersnatch!\" 1\n",
+            "that's 2\n",
+            "to 1\n",
+            "laugh 3\n",
+            "smile 1\n",
+            "dance 1\n",
+            "sing 1\n",
+            "He 3\n",
+            "took 1\n",
+            "his 1\n",
+            "vorpal 2\n",
+            "sword 1\n",
+            "hand: 1\n",
+            "feeling 1\n",
+            "dumps, 1\n",
+            "be 1\n",
+            "silly, 1\n",
+            "chumps 1\n",
+            "Long 1\n",
+            "time 1\n",
+            "manxome 1\n",
+            "foe 1\n",
+            "he 3\n",
+            "sought 1\n",
+            "-- 1\n",
+            "Just 3\n",
+            "purse 1\n",
+            "your 2\n",
+            "lips 1\n",
+            "whistle, 1\n",
+            "thing 1\n",
+            "So 1\n",
+            "rested 1\n",
+            "by 1\n",
+            "Tumtum 1\n",
+            "tree, 1\n",
+            "So, 1\n",
+            "always 3\n",
+            "death 1\n",
+            "stood 1\n",
+            "awhile 1\n",
+            "thought. 1\n",
+            "before 1\n",
+            "draw 1\n",
+            "terminal 1\n",
+            "breath 1\n",
+            "And, 1\n",
+            "as 3\n",
+            "uffish 1\n",
+            "thought 1\n",
+            "stood, 1\n",
+            "Life's 2\n",
+            "counterfeit 1\n",
+            "when 1\n",
+            "at 1\n",
+            "it 3\n",
+            "with 2\n",
+            "eyes 1\n",
+            "flame, 1\n",
+            "death's 1\n",
+            "joke, 1\n",
+            "it's 2\n",
+            "true 1\n",
+            "Came 1\n",
+            "whiffling 1\n",
+            "through 3\n",
+            "tulgey 1\n",
+            "wood, 1\n",
+            "You 1\n",
+            "see, 1\n",
+            "all 1\n",
+            "show, 1\n",
+            "keep 1\n",
+            "them 1\n",
+            "laughing 1\n",
+            "go 1\n",
+            "burbled 1\n",
+            "came! 1\n",
+            "remember 1\n",
+            "last 1\n",
+            "is 1\n",
+            "One, 2\n",
+            "two! 2\n",
+            "blade 1\n",
+            "went 2\n",
+            "snicker-snack! 1\n",
+            "left 1\n",
+            "dead, 1\n",
+            "its 1\n",
+            "head 1\n",
+            "galumphing 1\n",
+            "back. 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 19 = count()\n",
+        "\n",
+        "x = 'GGTTTGTACCAGTCCACGAAACAACGTCAATTAGCCGTCATGAACATACTGCGCTATGCCATCCCATCCTGTACTCTATCAACAGTTTCGTTTCTCCCAAGGACGTCCATTTGCTCAACGTGCCCTCTCTCGCTGCTTGTCGGAGATCAACGGTGGATAGAAAAGTCCGTTCGCTGATATACTCAAGAGCAACTTGCGAGGATTATCAATACAACCCTACGATGTCGCGCTTCTCGCCGTCGGCCTTGAGGCCTACTCCGGCTAAGGTACTCAGGTACTGTTATCTTGGTGCTCACGCACTCCCCAACTGCGAACCGGCAATGCGGAACGATGATTCTTTAGTACTGGTATGACTGTAGAGATTTATCGTCAAAACACAAAGGAGTTAACATGTTAGAGGCTTAAGTCCAGCGCACGAGGTACAGAGCTGTTCTACATTGTTAAGCGTGAGTTCTTGGTAAGAATCGAGCACTACCTAGACTGAAGAGAGGCCAACTGCGTTTTGACACCCCTTTGACGGGTTATTTGATACATAATCGGGAAGCACCGCTAGAACACACCCTATTGGTGAAGTTAAGCAACAGGAATCATGAGCAGTGAGCAGCACAGGGTGCGAGTAAGTGGTCTCGCGAGACAGTAGAAAATAATCCGTCACTATAAATAGGCCTACACTTGCCCCCACGTGGGCGTTAACCCGTCAGTATATCCGTGGGTTAACGGCATTTCACTTAGGGCTAGAGGCTCAATTTTCCACAGTGTTGCGACCCTTCGGTGATTCCAACCGACTGAAGTCAAATGGTCCCTACAGCCCGGGCTATCAGCCTATAGGCGATATCATATGTGCTGTCTATCCCTAAACCCAAGCACCACTTTCTAGACTTTCTCAGGTAT'\n",
+        "\n",
+        "count_a = x.count('A')\n",
+        "count_c = x.count('C')\n",
+        "count_g = x.count('G')\n",
+        "count_t = x.count('T')\n",
+        "\n",
+        "print(count_a,count_c,count_g,count_t)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d0gEEk4j4sAU",
+        "outputId": "45cce47a-3c36-42b7-901e-7b8e5386c9cb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "232 229 204 226\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Problem 6 - Rosalind\n",
+        "with open('/content/rosalind_dna_1224_1_dataset.txt', 'r') as data:\n",
+        "  line = data.read()\n",
+        "\n",
+        "count_a = line.count('A')\n",
+        "count_c = line.count('C')\n",
+        "count_g = line.count('G')\n",
+        "count_t = line.count('T')\n",
+        "\n",
+        "print(count_a,count_c,count_g,count_t)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CuUK8n8O4ttA",
+        "outputId": "a9427cda-f0de-4c4b-8860-b12c4b8ffbe7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "232 229 204 226\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 19.2 - Modify rosalind #5\n",
+        "with open('/content/rosalind_ini5_1224_1_dataset (1).txt', 'r') as data:\n",
+        "  line = data.read()\n",
+        "\n",
+        "words = line.split()\n",
+        "\n",
+        "word_count = []\n",
+        "for word in words:\n",
+        "  if word not in word_count:\n",
+        "    word_count.append(word)\n",
+        "    print(word, words.count(word))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "btJ0jU7G44uW",
+        "outputId": "6fde0ccb-0da8-48d9-b762-848ba0d16899"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "`Twas 1\n",
+            "brillig, 1\n",
+            "and 12\n",
+            "the 22\n",
+            "slithy 1\n",
+            "toves 1\n",
+            "Some 1\n",
+            "things 3\n",
+            "in 6\n",
+            "life 8\n",
+            "are 1\n",
+            "bad, 1\n",
+            "they 1\n",
+            "can 1\n",
+            "really 1\n",
+            "make 2\n",
+            "you 6\n",
+            "mad 1\n",
+            "Did 1\n",
+            "gyre 1\n",
+            "gimble 1\n",
+            "wabe: 1\n",
+            "Other 1\n",
+            "just 1\n",
+            "swear 1\n",
+            "curse 1\n",
+            "All 1\n",
+            "mimsy 1\n",
+            "were 1\n",
+            "borogoves, 1\n",
+            "When 2\n",
+            "you're 2\n",
+            "chewing 1\n",
+            "on 9\n",
+            "life's 1\n",
+            "gristle, 1\n",
+            "don't 2\n",
+            "grumble 1\n",
+            "give 1\n",
+            "a 4\n",
+            "whistle 1\n",
+            "And 7\n",
+            "mome 1\n",
+            "raths 1\n",
+            "outgrabe. 1\n",
+            "This 1\n",
+            "will 1\n",
+            "help 1\n",
+            "turn 1\n",
+            "out 1\n",
+            "for 1\n",
+            "best 1\n",
+            "\"Beware 1\n",
+            "Jabberwock, 2\n",
+            "my 1\n",
+            "son! 1\n",
+            "Always 4\n",
+            "look 8\n",
+            "bright 4\n",
+            "side 7\n",
+            "of 8\n",
+            "The 4\n",
+            "jaws 1\n",
+            "that 2\n",
+            "bite, 1\n",
+            "claws 1\n",
+            "catch! 1\n",
+            "right 3\n",
+            "Beware 1\n",
+            "Jubjub 1\n",
+            "bird, 1\n",
+            "shun 1\n",
+            "If 1\n",
+            "seems 1\n",
+            "jolly 1\n",
+            "rotten, 1\n",
+            "there's 1\n",
+            "something 1\n",
+            "you've 1\n",
+            "forgotten 1\n",
+            "frumious 1\n",
+            "Bandersnatch!\" 1\n",
+            "that's 2\n",
+            "to 1\n",
+            "laugh 3\n",
+            "smile 1\n",
+            "dance 1\n",
+            "sing 1\n",
+            "He 3\n",
+            "took 1\n",
+            "his 1\n",
+            "vorpal 2\n",
+            "sword 1\n",
+            "hand: 1\n",
+            "feeling 1\n",
+            "dumps, 1\n",
+            "be 1\n",
+            "silly, 1\n",
+            "chumps 1\n",
+            "Long 1\n",
+            "time 1\n",
+            "manxome 1\n",
+            "foe 1\n",
+            "he 3\n",
+            "sought 1\n",
+            "-- 1\n",
+            "Just 3\n",
+            "purse 1\n",
+            "your 2\n",
+            "lips 1\n",
+            "whistle, 1\n",
+            "thing 1\n",
+            "So 1\n",
+            "rested 1\n",
+            "by 1\n",
+            "Tumtum 1\n",
+            "tree, 1\n",
+            "So, 1\n",
+            "always 3\n",
+            "death 1\n",
+            "stood 1\n",
+            "awhile 1\n",
+            "thought. 1\n",
+            "before 1\n",
+            "draw 1\n",
+            "terminal 1\n",
+            "breath 1\n",
+            "And, 1\n",
+            "as 3\n",
+            "uffish 1\n",
+            "thought 1\n",
+            "stood, 1\n",
+            "Life's 2\n",
+            "counterfeit 1\n",
+            "when 1\n",
+            "at 1\n",
+            "it 3\n",
+            "with 2\n",
+            "eyes 1\n",
+            "flame, 1\n",
+            "death's 1\n",
+            "joke, 1\n",
+            "it's 2\n",
+            "true 1\n",
+            "Came 1\n",
+            "whiffling 1\n",
+            "through 3\n",
+            "tulgey 1\n",
+            "wood, 1\n",
+            "You 1\n",
+            "see, 1\n",
+            "all 1\n",
+            "show, 1\n",
+            "keep 1\n",
+            "them 1\n",
+            "laughing 1\n",
+            "go 1\n",
+            "burbled 1\n",
+            "came! 1\n",
+            "remember 1\n",
+            "last 1\n",
+            "is 1\n",
+            "One, 2\n",
+            "two! 2\n",
+            "blade 1\n",
+            "went 2\n",
+            "snicker-snack! 1\n",
+            "left 1\n",
+            "dead, 1\n",
+            "its 1\n",
+            "head 1\n",
+            "galumphing 1\n",
+            "back. 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 20 - Installing biopython\n",
+        "!pip install biopython"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5fxGlvAf47Vo",
+        "outputId": "bee53735-1337-4293-f0b0-984ed021c8d5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Collecting biopython\n",
+            "  Downloading biopython-1.88-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)\n",
+            "Requirement already satisfied: numpy in /usr/local/lib/python3.13/dist-packages (from biopython) (2.1.3)\n",
+            "Downloading biopython-1.88-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m3.2/3.2 MB\u001b[0m \u001b[31m43.9 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hInstalling collected packages: biopython\n",
+            "Successfully installed biopython-1.88\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "try:\n",
+        "  from Bio.Seq import Seq\n",
+        "  print('Biopython is installed correctly.')\n",
+        "except ImportError:\n",
+        "  print('Biopython not installed')"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RzqaepXP5BJw",
+        "outputId": "b551b732-1d63-4dfe-d1c3-1c4efa6077b3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Biopython is installed correctly.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 21 - Sequence function to define sequence objects\n",
+        "from Bio.Seq import Seq\n",
+        "\n",
+        "my_sequence = Seq('GATGGAACTTGACTACGTAAATT')"
+      ],
+      "metadata": {
+        "id": "tPmhJFfW5DE8"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 21.2\n",
+        "\n",
+        "#Complete Rosalind #7 Transcribing DNA into RNA\n",
+        "text = \"ATTTTAAGACCCAATGAGGTAACTGACCATACGTTTGTAAAGATTTGGTAGTTACTACCGTTATGTCGTAGGCTAGTGCAGCCCCGGTATGCGTGGCCTTCGCGCAATGCTGGGACTCAACTAGGCCGTCTATCCCAGAATCGTGGGCGAGTAAGTTTACCGCGTTGTAGTTCAACAAAGTGGGAACTTAGACACGCTGATTATGCGGCGGTTCTAGCGTTGAAGCGTGGTAGTTTTGTACTCTATGGTGCGTTCGCTATAGTCGAGGTATACTGAAGACGTACTACACGCCTTCGGTAGATGACATCCTTACGACGAGCACACCCGCCAATATCATCTTCAAGGCCGGGCCAGGTCGTACAAATTACAGAGTATACGCGCTCACACCCAGAGAGTCAGTGATTGTGTGACCGACAACGAGATGGATGCATATCTTGCATGTAATTTTTCGCAATCGAAGGCCCTACTATGAGGCCCTGCGAGGTTAGGACCATGACATTTACGAGCACTGTACGATACATGAACGGGGAAGTTAACGAAGTTATCGTATGGAACTGGGGAGCACGTACCGAACTTTTTTACGCTTTAAGGGGAATCGAGTCAAGTGCAATTTTCTTTTTATAGCCTTCTGAACATTCGACGACGCGCAGGAGCCGGTGGCTGAGGTGATTCAATAAGACCGTAGAGCTGGTAATGCTAGAGCTCCTTAGCAACAACCCCTGTCGCGGATTAAGCCCAGCCATCTCTGTGTGAACAAGGGCCTGGTTCGCATTTTAAACTGACAATAGTGTCATTATAATGCGCTAATCGGTAGGAGCACGTCCAAGAATAAGATTATGCGCCACGATGCTCGGGCATCAGGCACTCTAGAAGATATTCATCCGCTACACCACGAATGATGGGTTGGTTACGCCCTCAAGTGGATACCGGCGGATAAGGAACGCGAATAGCGATCTGTAA\"\n",
+        "#get rna\n",
+        "rna = text.replace(\"T\", \"U\")\n",
+        "\n",
+        "print(rna)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-pBoMTvI5EU6",
+        "outputId": "2b40a585-345d-4392-b0df-233093ecf9fb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "AUUUUAAGACCCAAUGAGGUAACUGACCAUACGUUUGUAAAGAUUUGGUAGUUACUACCGUUAUGUCGUAGGCUAGUGCAGCCCCGGUAUGCGUGGCCUUCGCGCAAUGCUGGGACUCAACUAGGCCGUCUAUCCCAGAAUCGUGGGCGAGUAAGUUUACCGCGUUGUAGUUCAACAAAGUGGGAACUUAGACACGCUGAUUAUGCGGCGGUUCUAGCGUUGAAGCGUGGUAGUUUUGUACUCUAUGGUGCGUUCGCUAUAGUCGAGGUAUACUGAAGACGUACUACACGCCUUCGGUAGAUGACAUCCUUACGACGAGCACACCCGCCAAUAUCAUCUUCAAGGCCGGGCCAGGUCGUACAAAUUACAGAGUAUACGCGCUCACACCCAGAGAGUCAGUGAUUGUGUGACCGACAACGAGAUGGAUGCAUAUCUUGCAUGUAAUUUUUCGCAAUCGAAGGCCCUACUAUGAGGCCCUGCGAGGUUAGGACCAUGACAUUUACGAGCACUGUACGAUACAUGAACGGGGAAGUUAACGAAGUUAUCGUAUGGAACUGGGGAGCACGUACCGAACUUUUUUACGCUUUAAGGGGAAUCGAGUCAAGUGCAAUUUUCUUUUUAUAGCCUUCUGAACAUUCGACGACGCGCAGGAGCCGGUGGCUGAGGUGAUUCAAUAAGACCGUAGAGCUGGUAAUGCUAGAGCUCCUUAGCAACAACCCCUGUCGCGGAUUAAGCCCAGCCAUCUCUGUGUGAACAAGGGCCUGGUUCGCAUUUUAAACUGACAAUAGUGUCAUUAUAAUGCGCUAAUCGGUAGGAGCACGUCCAAGAAUAAGAUUAUGCGCCACGAUGCUCGGGCAUCAGGCACUCUAGAAGAUAUUCAUCCGCUACACCACGAAUGAUGGGUUGGUUACGCCCUCAAGUGGAUACCGGCGGAUAAGGAACGCGAAUAGCGAUCUGUAA\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 21.2\n",
+        "\n",
+        "#Finish rosalind #8 with RNA into protein\n",
+        "\n",
+        "from Bio.Seq import Seq\n",
+        "with open('/content/rosalind_prot_1224_1_dataset.txt', 'r') as data:\n",
+        "  x = data.read()\n",
+        "\n",
+        "seq = Seq(x)\n",
+        "\n",
+        "print(seq.translate(to_stop=True))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0RzrAAYN5GBo",
+        "outputId": "26c47088-5008-4816-87ff-91b947a07e58"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "MPLRLGLRGTPRDRSYHAFRQSQTYVFQTLSRLQGDSPPHPGLPSPTCSLGPRNCAPFRAYRYLRRWLEKTYRKHTFHWRPSDTNRFNACDSVTRLTTLCDRLNVYLLVHRDMSLIAILRTAVMRYAPKHTCVGDQFSKSTTQLQQRRLRPDHGRRGRQPFAPFQPQALHSKSERLTPFSKVHHTHACYSAISSELIADQSMLPVRSHSKRCTGAKVSPMDATRVRSCAHTLVRLVSWYTSKMHRPGRVWSGLVPERADRRPVFLTFIDLDSTSISVDRLKVVYNGELSRGNVPRLKSYVTTVYETERHGSTPLAAFPLRVPRHMRAISGPLPQPTACAELNETLSVSYSVRLLIVILTSGHGLYKGFEITCTTGWADGRHGNNRFTAYFSVYRVYVGKDAPLHLQLPLVSLCTSAFRATRELVDLAMLNRHAHPNNSCCAEINVFATHLQGKLRTCIVASPPDECEPLLVQIRRLHKPGRLRPINGGCLSNDVRTAKSRQAGSFVRSNIYYLDRSCNSVPCRRNLPLTNYYDIDPLLVPVRIFRFFDAKNCARTPETFFQCSIECSFLVNGRSLLIALSSHISYLTLYHRTFDAPNIVIHTPVSIEARGLDSRTTKWDEPGCINRVKLNKAQLNREGITLAHVCNVILPTGPLRFYRTEGRQLQSRYTRLTGYSRLIVKCYTRAPARFSRTVTSGVFKLLNRLAHPIPITQRDPLCGLMPSKRAQCLPHLFKDVAHCGELCMPHREIDMVSAITHPVCARIRKFATRPDLTLPGLVSITRVKNDRAERQKRSVLYYVDNSVVAGIGGNTVPVPKKRPVAVPEDVQAISYKGVTSAQASQRVLYTAALSGRLTISRWPQTFRGRAASNVGNHLVSRRIINLDATSREQNKSQLVNGSYASCGRVPSPPDSVLSGLSANESFPSEAGWCLPISPTTVHTMYQTEQFHLEDSCSQHPVIGFPYLFPRKDASRIYLYPTCRSIQIERAVIIADHSKRVAINPPGANRKAYQPIRGGTIQQRQGWFITIRLATVLPPIWSGQLQLRRKRTICSDTKLVQVSVYSGRSVTVNHNRVSITIMNLVNLLAPFPELVMISDISRVHNRCRRTYSNKRRVPVLPKCSQLSGCMKQVRQTVPTLSALAPQLPVLSRKSPNLPGVIRGLQYRCTCAASTGECATWPCTMGITTPGQLGKISPCVPMPRHSSTLTTQLWVKSHGKTQLRCPVKDPGLWQRYTYVSSIRRDDTERFSVDVQQALDSRDRPRTNRQPPRVMCRLLDYMIRAKESSSLDLEVSLQRREYGILLPVVDTRSLFPSSAICMVYRPRVLCIHRRSYSLAYLEPTWFMGLAGTEPPSFPRPVRHDFVVPDASPCVGVSRRSHYLVQRELYISLRVTGATSGLTLLCLDELGEEDIRPKSFASILRLCVLPVSVPRRKSQIQIGPDRCQYHYYASLTALLVMAANICVDRGLHSSVIGQFGRLANIMLVNTFRVLSAPTHRQGVFVGLCKSVACEGFLVRSSRYHPVGGKVLSKTFFFGTPHTQCLDWHCTTWIMLTTISDIRLGALVPISLKNLVSPLYTTIVLRISGDIHRGQTPGHFSIDRIPAAYLCGYRWRRCILGLALDIGMSRWVQYRKRPVGETTPDDSYISWIAESRPSYNEKKLSSQRSRLRKRDILCDGTAQLKCRLVRRVFGALPLSYSAWGAATGYCQILEHTFTLTVLLNDDFSSNSRYILSVRRPASGLVLSCRSEKFNTDPYVYIRPPLKGSAVSFSLYTYLSWSTGNRREEVLRACRVTWRRSSSLREVLRTSRSIRARRSLPLRHFSGRLYVLGVLESFEMSRRILIFRPLIMREDFCGDSEQKPRFPLPGVLEHIMLNRMSLLPLRGITRDYIIQRANRAKLRVQSAGQNQKSRSGTACDPLILRSRSTNQAVERVNPLSSSAHEKVALVGSYVTLVSRLPLHFGCPVALAVCAATSGTPSGELYSIIQDADVVLEPVLNHFSWNPQVFVYELYVLKAYPLGNNDLRWIGVSPRTSRTFHGLAENRGKRRPPHMRDGGAVSRHLMRIEAGKHGSFCLPALTLLAHHLTGPHYPRFAHRPQYHTTCVILHNNLNRIVIAAPDWQLRQDSSSICKARYGYARRSIRVQITHGLSLAWQHESTDWWTLSLHAMCTIAQCHLSAQNNGLTGESLFSFVRAEVQDCSSADIIFPVLAIRAFVTGSLWRAHHVINTFARAKSHQPHWEPPSTCGPGAHASMVPVPRCLLYSDQAHTSRVVSFFVFSFPGPGHSGVGRNAILAPNGRIGARAMDIMYFLPLAQRSMHRVNASLQEGCSCYAQRITFIIKDFFLSSQVARLCMATSATRRIGSQQADLSAVMRLHPPAARSSKTPSRTTAEQPDQLDKMCVRHGGLTRTSSRPSKHVGFDKQGRSGIRSAGNSTGRTPIGPWISRISVVTEVVEWQVASLGGRLFDCRRLKSSAAVHITEVTEYGIERFPSHTHDSQGVGCRVIILARMRHKTSLVRVPLPSLRRAPDLFLPSLIVHTRVIQPSGLAVSGVDLTGVEIPLIPSSGHRSLTCSDGSSASTRASVTDHSLWPLTSSVRHLLPAIKSRSTERFHYRVKRPAATECDEALIAGRRRAIRAINLSRTVSPGILFTFMPRIQYESVIIGATGAGLVNTCKTVTVYLGRNEATVWWATRAGAVSYRKYTPTPEHFQESHRALTSWTRLRPLNGYKANSSRFRWCVIVNDSYPPVAVVAYIFHLSQGKLWALKCGEGGRWLISNHAVRRVSTLPYNNLGCRRSRCPCSICRIGESYMDLRETNMRTMRTHKIAHPCLVHCVHFPLCDLIVRCKSLGSVLCQQRVHTYSPSSRNRALHIRGPSPAHIRCTRTKVKRSGTPSVVLSSGEALVFTYSREFPRYSHKAIHCSCTHVFGETHRSSLARTTTGKRCRASDRDSAMGMTHRFPEAWGAEFPSLRVRVDVVHIKAATTCAGCSKKLRVPFSRYSLIWSQCGFHLERRGMLRTAVLDYVRNTLVPTPTAYLVDGGPQSHKATESSGRIRAYPASATHLNSVTGGLGHSSNAYYGQVYLYIDPPIMTCSDDKKVGRKAKSKLASYSSLTLLAPTRIFEPHAVNRVLYVQKLRKRFSLSCETVSNRIKRPASNLLVSTLQAGEIDFSTPKVNRNYKELSETSNLFHKSSHTHQTPSSPSRLSLANCILYSQTGGDGGVREPSNCPGGRGFMECRELLGMPASSRPPLQECRSSVRPVRLASEDYLLGKDNVVTTWQLVPTKHLGRMSRPHTVENPYEQIYHKWSPLGYSQVVFYCVPGMRRKAAAF\n"
+          ]
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.13/dist-packages/Bio/Seq.py:2874: BiopythonWarning: Partial codon, len(sequence) not a multiple of three. Explicitly trim the sequence or add trailing N before translation. This may become an error in future.\n",
+            "  warnings.warn(\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Task 22 - SeqIO to parse() seq files\n",
+        "from Bio.SeqIO import parse\n",
+        "\n",
+        "for seq_record in parse(\"practicefasta.txt\", \"fasta\"):\n",
+        "    print (seq_record.id)\n",
+        "    print (seq_record.seq)\n",
+        "    print (len(seq_record.seq))\n",
+        "    print (seq_record)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7PReZ88T5Lm9",
+        "outputId": "832e56fd-a809-435b-b34a-3d45103c193d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rosalind_6404\n",
+            "CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG\n",
+            "80\n",
+            "ID: Rosalind_6404\n",
+            "Name: Rosalind_6404\n",
+            "Description: Rosalind_6404\n",
+            "Number of features: 0\n",
+            "Seq('CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGC...AGG')\n",
+            "Rosalind_5959\n",
+            "CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCTATATCCATTTGTCAGCAGACACGC\n",
+            "84\n",
+            "ID: Rosalind_5959\n",
+            "Name: Rosalind_5959\n",
+            "Description: Rosalind_5959\n",
+            "Number of features: 0\n",
+            "Seq('CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGA...CGC')\n",
+            "Rosalind_0808\n",
+            "CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT\n",
+            "87\n",
+            "ID: Rosalind_0808\n",
+            "Name: Rosalind_0808\n",
+            "Description: Rosalind_0808\n",
+            "Number of features: 0\n",
+            "Seq('CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGC...AAT')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Task 23.1\n",
+        "from Bio.SeqIO import parse\n",
+        "from Bio.SeqUtils import gc_fraction\n",
+        "\n",
+        "for seq_record in parse(\"practicefasta.txt\", \"fasta\"):\n",
+        "  print(seq_record.seq)\n",
+        "  seq = Seq(seq_record.seq)\n",
+        "  print(gc_fraction(seq)*100)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lxrkNLHM5VOT",
+        "outputId": "e4de9da7-0c24-4a50-86f6-da64b802cb7d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "CCTGCGGAAGATCGGCACTAGAATAGCCAGAACCGTTTCTCTGAGGCTTCCGGCCTTCCCTCCCACTAATAATTCTGAGG\n",
+            "53.75\n",
+            "CCATCGGTAGCGCATCCTTAGTCCAATTAAGTCCCTATCCAGGCGCTCCGCCGAAGGTCTATATCCATTTGTCAGCAGACACGC\n",
+            "53.57142857142857\n",
+            "CCACCCTCGTGGTATGGCTAGGCATTCAGGAACCGGAGAACGCTTCAGACCAGCCCGGACTGGGAACCTGCGGGCAGTAGGTGGAAT\n",
+            "60.91954022988506\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Complete Rosalind 9 - Task 23.2\n",
+        "\n",
+        "from Bio.SeqIO import parse\n",
+        "from Bio.SeqUtils import gc_fraction\n",
+        "\n",
+        "max_id = ''\n",
+        "max_gc = 0\n",
+        "\n",
+        "for seq_record in parse(\"rosalind_gc_1224_1_dataset.txt\", \"fasta\"):\n",
+        "  gc = gc_fraction(seq_record.seq)*100\n",
+        "  if gc > max_gc:\n",
+        "    max_gc = gc\n",
+        "    max_id = seq_record.id\n",
+        "\n",
+        "print(max_id)\n",
+        "print(max_gc)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HsGZKcTl5f88",
+        "outputId": "bedaa377-2684-46e4-ce3b-18611e748c32"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Rosalind_2496\n",
+            "53.83663366336634\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
